@@ -1,233 +1,194 @@
-/***Wskazówki**
-* Podziel stronę odpowiednio (section, header, footer) 
-* Czarne tło pod headerem oraz pod trzema boxami powinny być rozciągnięte na 100% szerokości strony.
-* Linie czerwone przedstawione na powyższym przykładzie traktuj jako linie pomocnicze będące obramowaniem 
-kontenera środkującego. Odpowiednio go nazwij np. main_width. */
+
+
+
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/../fonts/Raleway-ExtraBold.eot');
+	src: url('../fonts/../fonts/../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/../fonts/Raleway-ExtraBold.woff') format('woff'),
+		url('../fonts/../fonts/Raleway-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-ExtraBoldItalic.eot');
+	src: url('../fonts/../fonts/Raleway-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ExtraBoldItalic.woff') format('woff'),
+		url('../fonts/Raleway-ExtraBoldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Regular.eot');
+	src: url('../fonts/../fonts/Raleway-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Regular.woff') format('woff'),
+		url('../fonts/Raleway-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-ThinItalic.eot');
+	src: url('../fonts/../fonts/Raleway-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ThinItalic.woff') format('woff'),
+		url('../fonts/Raleway-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-BlackItalic.eot');
+	src: url('../fonts/../fonts/Raleway-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-BlackItalic.woff') format('woff'),
+		url('../fonts/Raleway-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Black.eot');
+	src: url('../fonts/../fonts/Raleway-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Black.woff') format('woff'),
+		url('../fonts/Raleway-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Italic.eot');
+	src: url('../fonts/../fonts/Raleway-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Italic.woff') format('woff'),
+		url('../fonts/Raleway-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Thin.eot');
+	src: url('../fonts/../fonts/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Thin.woff') format('woff'),
+		url('../fonts/Raleway-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-LightItalic.eot');
+	src: url('../fonts/../fonts/Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-LightItalic.woff') format('woff'),
+		url('../fonts/Raleway-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Light.eot');
+	src: url('../fonts/../fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Light.woff') format('woff'),
+		url('../fonts/Raleway-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Bold.eot');
+	src: url('../fonts/../fonts/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Bold.woff') format('woff'),
+		url('../fonts/Raleway-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-SemiBold.eot');
+	src: url('../fonts/../fonts/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-SemiBold.woff') format('woff'),
+		url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-ExtraLight.eot');
+	src: url('../fonts/../fonts/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ExtraLight.woff') format('woff'),
+		url('../fonts/Raleway-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-BoldItalic.eot');
+	src: url('../fonts/../fonts/Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-BoldItalic.woff') format('woff'),
+		url('../fonts/Raleway-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-ExtraLightItalic.eot');
+	src: url('../fonts/../fonts/Raleway-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-ExtraLightItalic.woff') format('woff'),
+		url('../fonts/Raleway-ExtraLightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-Medium.eot');
+	src: url('../fonts/../fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-Medium.woff') format('woff'),
+		url('../fonts/Raleway-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-MediumItalic.eot');
+	src: url('../fonts/../fonts/Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-MediumItalic.woff') format('woff'),
+		url('../fonts/Raleway-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/../fonts/Raleway-SemiBoldItalic.eot');
+	src: url('../fonts/../fonts/Raleway-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Raleway-SemiBoldItalic.woff') format('woff'),
+		url('../fonts/Raleway-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+}
+
+
 
 * {
-	font-family: "Raleway", Arial, sans-serif;
+	font-family: "Raleway" ;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-}
-
-
-
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-LightItalic.eot');
-	src: url('Raleway-LightItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-LightItalic.woff2') format('woff2'),
-		url('Raleway-LightItalic.woff') format('woff'),
-		url('Raleway-LightItalic.ttf') format('truetype'),
-		url('Raleway-LightItalic.svg#Raleway-LightItalic') format('svg');
-	font-weight: 300;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-ThinItalic.eot');
-	src: url('Raleway-ThinItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-ThinItalic.woff2') format('woff2'),
-		url('Raleway-ThinItalic.woff') format('woff'),
-		url('Raleway-ThinItalic.ttf') format('truetype'),
-		url('Raleway-ThinItalic.svg#Raleway-ThinItalic') format('svg');
-	font-weight: 100;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-ExtraLight.eot');
-	src: url('Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-ExtraLight.woff2') format('woff2'),
-		url('Raleway-ExtraLight.woff') format('woff'),
-		url('Raleway-ExtraLight.ttf') format('truetype'),
-		url('Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
-	font-weight: 200;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-ExtraBoldItalic.eot');
-	src: url('Raleway-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-ExtraBoldItalic.woff2') format('woff2'),
-		url('Raleway-ExtraBoldItalic.woff') format('woff'),
-		url('Raleway-ExtraBoldItalic.ttf') format('truetype'),
-		url('Raleway-ExtraBoldItalic.svg#Raleway-ExtraBoldItalic') format('svg');
-	font-weight: 800;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Thin.eot');
-	src: url('Raleway-Thin.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Thin.woff2') format('woff2'),
-		url('Raleway-Thin.woff') format('woff'),
-		url('Raleway-Thin.ttf') format('truetype'),
-		url('Raleway-Thin.svg#Raleway-Thin') format('svg');
-	font-weight: 100;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-BlackItalic.eot');
-	src: url('Raleway-BlackItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-BlackItalic.woff2') format('woff2'),
-		url('Raleway-BlackItalic.woff') format('woff'),
-		url('Raleway-BlackItalic.ttf') format('truetype'),
-		url('Raleway-BlackItalic.svg#Raleway-BlackItalic') format('svg');
-	font-weight: 900;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Black.eot');
-	src: url('Raleway-Black.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Black.woff2') format('woff2'),
-		url('Raleway-Black.woff') format('woff'),
-		url('Raleway-Black.ttf') format('truetype'),
-		url('Raleway-Black.svg#Raleway-Black') format('svg');
-	font-weight: 900;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-SemiBold.eot');
-	src: url('Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-SemiBold.woff2') format('woff2'),
-		url('Raleway-SemiBold.woff') format('woff'),
-		url('Raleway-SemiBold.ttf') format('truetype'),
-		url('Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
-	font-weight: 600;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-BoldItalic.eot');
-	src: url('Raleway-BoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-BoldItalic.woff2') format('woff2'),
-		url('Raleway-BoldItalic.woff') format('woff'),
-		url('Raleway-BoldItalic.ttf') format('truetype'),
-		url('Raleway-BoldItalic.svg#Raleway-BoldItalic') format('svg');
-	font-weight: bold;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-SemiBoldItalic.eot');
-	src: url('Raleway-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-SemiBoldItalic.woff2') format('woff2'),
-		url('Raleway-SemiBoldItalic.woff') format('woff'),
-		url('Raleway-SemiBoldItalic.ttf') format('truetype'),
-		url('Raleway-SemiBoldItalic.svg#Raleway-SemiBoldItalic') format('svg');
-	font-weight: 600;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Medium.eot');
-	src: url('Raleway-Medium.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Medium.woff2') format('woff2'),
-		url('Raleway-Medium.woff') format('woff'),
-		url('Raleway-Medium.ttf') format('truetype'),
-		url('Raleway-Medium.svg#Raleway-Medium') format('svg');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-ExtraBold.eot');
-	src: url('Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-ExtraBold.woff2') format('woff2'),
-		url('Raleway-ExtraBold.woff') format('woff'),
-		url('Raleway-ExtraBold.ttf') format('truetype'),
-		url('Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
-	font-weight: 800;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Bold.eot');
-	src: url('Raleway-Bold.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Bold.woff2') format('woff2'),
-		url('Raleway-Bold.woff') format('woff'),
-		url('Raleway-Bold.ttf') format('truetype'),
-		url('Raleway-Bold.svg#Raleway-Bold') format('svg');
-	font-weight: bold;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-MediumItalic.eot');
-	src: url('Raleway-MediumItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-MediumItalic.woff2') format('woff2'),
-		url('Raleway-MediumItalic.woff') format('woff'),
-		url('Raleway-MediumItalic.ttf') format('truetype'),
-		url('Raleway-MediumItalic.svg#Raleway-MediumItalic') format('svg');
-	font-weight: 500;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Regular.eot');
-	src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Regular.woff2') format('woff2'),
-		url('Raleway-Regular.woff') format('woff'),
-		url('Raleway-Regular.ttf') format('truetype'),
-		url('Raleway-Regular.svg#Raleway-Regular') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-ExtraLightItalic.eot');
-	src: url('Raleway-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-ExtraLightItalic.woff2') format('woff2'),
-		url('Raleway-ExtraLightItalic.woff') format('woff'),
-		url('Raleway-ExtraLightItalic.ttf') format('truetype'),
-		url('Raleway-ExtraLightItalic.svg#Raleway-ExtraLightItalic') format('svg');
-	font-weight: 200;
-	font-style: italic;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Light.eot');
-	src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Light.woff2') format('woff2'),
-		url('Raleway-Light.woff') format('woff'),
-		url('Raleway-Light.ttf') format('truetype'),
-		url('Raleway-Light.svg#Raleway-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Raleway';
-	src: url('Raleway-Italic.eot');
-	src: url('Raleway-Italic.eot?#iefix') format('embedded-opentype'),
-		url('Raleway-Italic.woff2') format('woff2'),
-		url('Raleway-Italic.woff') format('woff'),
-		url('Raleway-Italic.ttf') format('truetype'),
-		url('Raleway-Italic.svg#Raleway-Italic') format('svg');
-	font-weight: normal;
-	font-style: italic;
 }
 
 
@@ -240,15 +201,15 @@ html, body {
 	width: 1000px;
 	height: inherit;
 	margin: 0 auto;
-
 }
+
 .row {
 	width: 50%;
 	height: auto;
 	float: left;
 }
 
-/*1. css dla elementu header*/
+/*css dla elementu header*/
 
 header {
 	width: 100%;
@@ -270,19 +231,18 @@ li {
 	display: inline-block;
 	float: right;
 	color: white;
-
 }
 
 #sit_on_chair {
 	color: white;
 	float: left;
 	display: inline-block;
-	
 }
 
-/* 2. Ustawienie koloru dla elementów span*/
+/* Ustawienie koloru dla elementów span*/
 span {
 	color: rgb(39, 184, 150);
+	font-weight: bold;
 }
 
 section {
@@ -290,7 +250,7 @@ section {
 	display: inline-block;
 }
 
-/*3. Ustawienia sekcja 1*/
+/*Ustawienia sekcja 1*/
 
 #info {
 	background-image: -webkit-gradient(
@@ -310,7 +270,6 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 
 
 #background_sec1 {
-	
 	position: relative;
 	width: 40%;
 	height: 300px;
@@ -337,6 +296,7 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 	float: right;
 	margin-top: 150px;
 }
+
 #title {
 	position: relative;
 	float: left;
@@ -345,30 +305,35 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 	height: 300px;
 	margin-top: 70px;
 }
+
 #title > h1 {
 	text-transform: uppercase;
 	padding: 10px;
 	text-align: center;
 	font-size: 32px;
+	font-weight: normal;
 }
 
-#title p:first-child {
+#title p {
 	padding: 10px;
 	text-align: center;
-	font-size: 16px;
-	
+	font-size: 14px;
+	color: #2e2e2e;	
+	line-height: 20px;
 }
+
 #title >button {
 	background-color: rgb(39, 184, 150);
 	border-radius: 10px;
 	font-size: 18px;
-	width: 250px;
-	height: 50px;
-	padding: 10px;
+	font-weight: normal;
+	padding: 10px 40px;
 	text-transform: uppercase;
 	color: white;
+	margin-top: 20px;
 	margin-left: 100px;
 	vertical-align: middle;
+
 
 }
 
@@ -428,8 +393,8 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	background-image: url("../images/box2_img.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 50px;
+	margin-right: 50px;
 	font-weight: bold;
 }
 
@@ -446,6 +411,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 
 #white_box3 {
 
+	float: right;
 	border: 1px solid rgb(217, 217, 217);
 	width: 300px;
 	height: 230px;
@@ -521,10 +487,14 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	border: 2px solid rgb(39, 184, 150);
 	background-color: rgb(39, 184, 150);
 }
+
+.price_box:last-child {
+	float: right;
+}
  
 #standard_plan {
-	margin-left: 30px;
-	margin-right: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 
 /*kolo_big i kolo_small - klasy odpowiedzialne za kółka w price_box*/
@@ -567,6 +537,8 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	border:2px solid white;
 	background-color: white;
 }
+
+
 /*tekst basic/standard/advance plan*/
 .price_box h1{
 	text-transform: uppercase;
@@ -649,6 +621,65 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	background-color: white;
 	color: rgb(39, 184, 150);
 }
+
+.kontakt_box {
+	position: relative;
+	height: 500px;
+}
+.kontakt_box div:first-child{
+	width: 60%;
+	height: 500px;
+}
+input {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 25px;
+	border: 1px solid rgba(39, 184, 150, .6);
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 28px;
+}
+
+textarea {
+	border: 1px solid rgba(39, 184, 150, .6);
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 28px;
+	resize: none;
+	width: 100%;
+}
+
+.kontakt_box div {
+	float: left;
+}
+.kontakt_box div:last-child {
+	position: relative;
+	width: 40%;
+}
+.kontakt_box img {
+	position: absolute;
+	top: -40px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.kontakt_box button {
+	position: absolute;
+	background-color: rgb(39, 184, 150);
+	font-size: 32px;
+	font-weight: bold;
+	padding: 10px 30px;
+	color: white;
+	vertical-align: middle;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 5%;
+	left: 80px;
+	bottom: 10px;
+}
+
 footer {
 	width: 100%;
 	height: 50px;
