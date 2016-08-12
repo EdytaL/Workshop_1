@@ -1,7 +1,4 @@
 
-
-
-
 @font-face {
 	font-family: 'Raleway';
 	src: url('../fonts/../fonts/../fonts/Raleway-ExtraBold.eot');
@@ -193,10 +190,10 @@
 
 
 html, body {
-	width: 100%; /*zawsze przyjmuje szerokość urządzenia*/
+	width: 100%; 
 }
 
-.container { /*pomaga wyśrodkować elementy*/
+.container { 
 	position: relative;
 	width: 1000px;
 	height: inherit;
@@ -209,36 +206,85 @@ html, body {
 	float: left;
 }
 
-/*css dla elementu header*/
+/*------------header-------------------------*/
 
 header {
 	width: 100%;
-	height: 70px;
+	height: 60px;
 	margin: 0 auto;
 	background-color: black;
 	line-height: 60px;
 	text-transform: uppercase;
 }
-
-li {
-	float: left;
-	padding-left: 30px;
+header a {
+    text-decoration: none;
+    color: white;
+      
+}
+header a:hover {
+    color: rgb(39, 184, 150);
 }
 
-#menu_list {
+.menu_list li {
+	float: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: black;
+    position: relative;
+    
+}
+
+.menu_list {
 	list-style-type: none;
 	float: right;
-	display: inline-block;
+	display: block;
 	float: right;
 	color: white;
+    position: relative;
+    text-align: center;
 }
+/*------------hover menu list-----------------*/
+.menu_list_hover {
+	display: none;
+	font-size:12px;
+	line-height:32px;
+	padding: 0;
+    margin-top: 15px;
+	list-style-type: none;
+    position: absolute;
+    left: -45px;
+}
+
+.menu_list_hover li {
+	background-color:black;
+    float: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: normal;
+      
+}
+
+
+.triangle {
+    display: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -6px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid black;
+    margin: 0 auto;
+}
+
 
 #sit_on_chair {
 	color: white;
 	float: left;
 	display: inline-block;
 }
-
 /* Ustawienie koloru dla elementów span*/
 span {
 	color: rgb(39, 184, 150);
@@ -252,7 +298,11 @@ section {
 
 /*Ustawienia sekcja 1*/
 
+.banner {
+    height: 450px;
+}
 #info {
+   
 	background-image: -webkit-gradient(
 	linear,
 	right bottom,
@@ -261,12 +311,12 @@ section {
 	color-stop(1, #F9F9F9),
 	color-stop(1, #F8F8F8)
 );
-background-image: -o-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
-background-image: -moz-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
-background-image: -webkit-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
-background-image: -ms-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
-background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);;
-}
+    background-image: -o-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
+    background-image: -moz-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
+    background-image: -webkit-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
+    background-image: -ms-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
+    background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9\    F9 100%, #F8F8F8 100%);;
+    }
 
 
 #background_sec1 {
@@ -274,6 +324,7 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 	width: 40%;
 	height: 300px;
 	padding: 15px;
+    padding-top: 40px;
 	float: left;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -300,7 +351,7 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 #title {
 	position: relative;
 	float: left;
-	padding: 10px;
+	padding: 40px;
 	width: 450px;
 	height: 300px;
 	margin-top: 70px;
@@ -369,6 +420,7 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 }
 
 
+
 /*white_box1 - id pierwszego prostokąta w sekcji photo, w tle wstawiony obrazek*/
 #white_box1 {
 
@@ -376,6 +428,11 @@ background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
+
+/*#white_box1:hover {
+	background-image: none;
+}*/
 
 /*white_box1 div: odpowiada za pasek, na któym znajduje się tekst opisu krzesła na
 div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
@@ -630,7 +687,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	width: 60%;
 	height: 500px;
 }
-input {
+form input {
 	width: 100%;
 	height: 70px;
 	margin-bottom: 25px;
@@ -668,16 +725,48 @@ textarea {
 .kontakt_box button {
 	position: absolute;
 	background-color: rgb(39, 184, 150);
-	font-size: 32px;
+	font-size: 36px;
 	font-weight: bold;
-	padding: 10px 30px;
+	padding: 10px 90px;
 	color: white;
 	vertical-align: middle;
 	border: none;
 	text-transform: uppercase;
-	border-radius: 5%;
+	border-radius: 10px;
 	left: 80px;
 	bottom: 10px;
+	margin-bottom: 110px;
+}
+
+#checkbox {
+
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 230px;
+  right: 0;
+  bottom: 0;
+  left: 85px;
+  background:url("../images/form_ok.jpg") 0 0 no-repeat;
+ 
+}
+
+#checkbox:after {
+	content: url("../images/form_ok.jpg") 0 0 no-repeat;
+ 
+}
+
+label{
+  width: 240px;
+  height: 40px;
+  position: absolute;
+  top: 230px;
+  right: 0;
+  bottom: 0;
+  left: 140px;
+  font-size: 17px;
+  color: #9c9c9c;
+
 }
 
 footer {
@@ -686,18 +775,34 @@ footer {
 	background-color: white; 
 	font-size:20px;
 	line-height: 40px;
+	color: #9c9c9c;
 }
 
-#tekst_coders {
+footer .container div:nth-child(2) {
 	float: left;
-	display: inline-block;
-	margin: auto 0;
+}
+
+footer img {
+	float: left;
+
+}
+footer img:first-of-type{
+	padding-left: 210px;
 }
 
 #tekst_logo {
 	float: right;
 	display: inline-block;
+	color: #9c9c9c;
+	text-transform: uppercase;
+	font-weight: normal;
+	bottom: 50px;
 }
+#tekst_logo span {
+	font-weight: bold;
+	color: #9c9c9c;
+}
+
 
 
 
