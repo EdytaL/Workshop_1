@@ -1,11 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-    //variables 
+    //variables DOM
     
     var menuElements = document.querySelectorAll(".menu_list > li");
+    var sliderDiv = document.querySelector("#background_sec1");
+    var listElementsSlider = sliderDiv.querySelectorAll("li");
+    var arrowNext = document.querySelector(".arrow_right");
+    var arrowPrev = document.querySelector(".arrow_left");
     var whiteBoxInfoSection = document.querySelectorAll(".white_box");
     
-   
+   //variables JS
+    var photoIndex = 0;
    
     
     //event - show/hdden the hidden menu in the header 
@@ -25,6 +30,28 @@ document.addEventListener("DOMContentLoaded", function() {
             triangleDivList.style.display="none";
         });
     }
+    //event - slider in section info 
+    
+    arrowNext.addEventListener("click", function(event){
+
+        listElementsSlider[photoIndex].classList.toggle("visible");
+        photoIndex++;
+        
+        if(photoIndex>listElementsSlider.length-1) {
+            photoIndex=0;
+        }
+        listElementsSlider[photoIndex].classList.toggle("visible");
+    });
+    
+    arrowPrev.addEventListener("click", function(event) {
+        listElementsSlider[photoIndex].classList.toggle("visible");
+        photoIndex--;
+        
+        if(photoIndex<0) {
+            photoIndex = listElementsSlider.length-1;
+        }
+        listElementsSlider[photoIndex].classList.toggle("visible");
+    })
     
     //event - show/hidden div with chair's name on white_box, scetion photo
     
