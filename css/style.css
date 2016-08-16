@@ -1,4 +1,4 @@
-
+/*--------------------fons-----------------------------------------------------------*/
 @font-face {
 	font-family: 'Raleway';
 	src: url('../fonts/../fonts/../fonts/Raleway-ExtraBold.eot');
@@ -222,7 +222,7 @@ header a {
       
 }
 header a:hover {
-    color: rgb(39, 184, 150);
+    color: #24baa0;
 }
 
 .menu_list li {
@@ -233,7 +233,6 @@ header a:hover {
     position: relative;
     
 }
-
 .menu_list {
 	list-style-type: none;
 	float: right;
@@ -246,6 +245,7 @@ header a:hover {
 /*------------hidden menu list-----------------*/
 .menu_list_hover {
 	display: none;
+    width: 170px;
 	font-size:12px;
 	line-height:32px;
 	padding: 0;
@@ -278,16 +278,15 @@ header a:hover {
     border-bottom: 7px solid black;
     margin: 0 auto;
 }
-
-
-#sit_on_chair {
+/*--------------------------------------------*/
+.sit_on_chair {
 	color: white;
 	float: left;
 	display: inline-block;
 }
 
 span {
-	color: rgb(39, 184, 150);
+	color: #24baa0;
 	font-weight: bold;
 }
 
@@ -296,12 +295,12 @@ section {
 	display: inline-block;
 }
 
-/*-------Section_1----------------*/
+/*-------Section info---------------------------*/
 
 .banner {
     height: 450px;
 }
-#info {
+.info {
    
 	background-image: -webkit-gradient(
 	linear,
@@ -310,16 +309,16 @@ section {
 	color-stop(0.06, #DCDBE1),
 	color-stop(1, #F9F9F9),
 	color-stop(1, #F8F8F8)
-);
+    )
     background-image: -o-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -moz-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -webkit-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -ms-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9\    F9 100%, #F8F8F8 100%);;
-    }
+};
 
 
-#background_sec1 {
+.background_sec1 {
 	position: relative;
 	width: 40%;
 	height: 300px;
@@ -330,15 +329,15 @@ section {
 	margin-bottom: 10px;
 }
 
-/*----------slider - info section----*/
-#background_sec1 ul {
+/*----------slider - section_1------------------*/
+.background_sec1 ul {
     list-style-type: none;
 }
-#background_sec1 li {
+.background_sec1 li {
     display: none;
 }
 
-#background_sec1 .visible {
+.background_sec1 .visible {
     display: inline-block;
 };
 
@@ -346,7 +345,7 @@ section {
 .arrow_right div{
 	width: 64px;
 	height: 64px;
-	color: rgb(39, 184, 150);
+	color: #24baa0;
 	font-size: 64px;
 	float: right;
 	margin-top: 150px;
@@ -356,15 +355,16 @@ section {
     display: inline-block;
 	width: 64px;
 	height: 64px;
-	color: rgb(39, 184, 150);
+	color: #24baa0;
 	font-size: 64px;
 	float: left;
 	margin-top: 150px;
 }
 
-/*---------------------------*/
+/*----------------------------------------------*/
 
-#title {
+/*----------------------------------------------*/
+.title {
 	position: relative;
 	float: left;
 	padding: 40px;
@@ -373,7 +373,7 @@ section {
 	margin-top: 70px;
 }
 
-#title > h1 {
+.title > h1 {
 	text-transform: uppercase;
 	padding: 10px;
 	text-align: center;
@@ -381,7 +381,7 @@ section {
 	font-weight: normal;
 }
 
-#title p {
+.title p {
 	padding: 10px;
 	text-align: center;
 	font-size: 14px;
@@ -389,8 +389,8 @@ section {
 	line-height: 20px;
 }
 
-#title >button {
-	background-color: rgb(39, 184, 150);
+.title >button {
+	background-color: #24baa0;
 	border-radius: 10px;
 	font-size: 18px;
 	font-weight: normal;
@@ -404,17 +404,14 @@ section {
 
 }
 
-#photo {
+.photo {
 	background-color: white;
 	display: inline-block;
 }
 
 
 
-
-
-
-/*white_box - klasa odpowiedzialna za div w sekcji photo; ustawia bazowe prostokąty*/
+/*----------------white_box - section photo----------------------------------*/
 .white_box {
 	width: 300px;
 	height: 210px;
@@ -429,19 +426,14 @@ section {
 	text-transform: uppercase;
 }
 
-/*white_box h1: odpowiada za tekst z nazwą krzeseł w pierwszych dwóch div;
- pasek pod tekstem ustawiony jako border-bottom*/
 .white_box h1 {
 	font-size: 15px;
 	font-weight: 600;
 	width: 130px;
 	height: 30px;
-	border-bottom: 8px solid rgb(39, 184, 150);
+	border-bottom: 8px solid #24baa0;
 }
 
-
-
-/*white_box1 - id pierwszego prostokąta w sekcji photo, w tle wstawiony obrazek*/
 #white_box1 {
 
 	background-image: url("../images/box1_img.jpg");
@@ -449,13 +441,6 @@ section {
 	background-repeat: no-repeat;
 }
 
-
-/*#white_box1:hover {
-	background-image: none;
-}*/
-
-/*white_box1 div: odpowiada za pasek, na któym znajduje się tekst opisu krzesła na
-div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 #white_box1 div{
 	background-color: rgba(255, 255, 255, .5);
 	width: 300px;
@@ -465,7 +450,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	padding-left: 10px;
 }
 
-/*white_box2 - id drugiego prostokąta w sekcji photo, w tle wstawiony obrazek*/
+
 #white_box2 {
 	background-image: url("../images/box2_img.jpg");
 	background-size: cover;
@@ -475,8 +460,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	font-weight: bold;
 }
 
-/*white_box2 div: odpowiada za pasek, na któym znajduje się tekst opisu krzesła na
-div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
+
 #white_box2 div{
 	background-color: rgba(255, 255, 255, .5);
 	width: 300px;
@@ -495,13 +479,13 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	padding: 10px;
 }
 
-#white_box_text  {
+.white_box_text  {
 	width: 180px;
 	font-weight: bold;
 	font-size: 18px;
 	margin-top: 20px;
 	margin-bottom: 10px;
-	border-bottom: 10px solid rgb(39, 184, 150);
+	border-bottom: 10px solid #24baa0;
 	
 }
 
@@ -518,14 +502,13 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 
 }
 
-/*section cennik*/
+/*----------------------section price_list--------------------------------------*/
 
-#cennik {
-	color: rgb(39, 184, 150);
+.price_list {
+	color: #24baa0;
 	background-color: #f0f0f0;
 }
 
-/*text_section - klasa odpowiedzialna za tekst na początku sekcji cennik i kontakt*/
 .text_section {
 	text-transform: uppercase;
 	padding-bottom: 100px;
@@ -538,11 +521,11 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	size: 32px;
 	width: 300px;
 	height: 40px;
-	border-bottom: 8px solid rgb(39, 184, 150);
+	border-bottom: 8px solid #24baa0;
 }
 
 
-/*elementy odpowiedzialne za price_box*/
+/*---------------------price_box-----------------------------------------------*/
 .price_box {
 
 	position: relative;
@@ -559,10 +542,9 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	background-color: #f7f7f7;
 }
 
-/* po najechaniu na price_box zmieniają się kolory elementów*/
 .price_box:hover{
-	border: 2px solid rgb(39, 184, 150);
-	background-color: rgb(39, 184, 150);
+	border: 2px solid #24baa0;
+	background-color: #24baa0;
 }
 
 .price_box:last-child {
@@ -574,9 +556,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	margin-right: 50px;
 }
 
-/*kolo_big i kolo_small - klasy odpowiedzialne za kółka w price_box*/
-
-.kolo_big {
+.round_big {
 	position: absolute;
 	top: -35px;
 	left: 0;
@@ -590,13 +570,13 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	z-index: 10;
 }
 
-.price_box:hover .kolo_big {
-	border:2px solid rgb(39, 184, 150);
-	background-color: rgb(39, 184, 150);
+.price_box:hover .round_big {
+	border:2px solid #24baa0;
+	background-color: #24baa0;
 } 
 
 
-.kolo_small {
+.round_small {
 	position: absolute;
 	top: -19px;
 	left: 0;
@@ -610,17 +590,16 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	z-index: 10;
 }
 
-.price_box:hover .kolo_small {
+.price_box:hover .round_small {
 	border:2px solid white;
 	background-color: white;
 }
 
 
-/*tekst basic/standard/advance plan*/
 .price_box h1{
 	text-transform: uppercase;
 	padding: 30px 25px 0 25px;
-	color: rgb(39, 184, 150); /*kolor turkusowy*/
+	color: #24baa0;
 	font-weight: normal;
 	font-size: 24px;
 }
@@ -643,7 +622,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 }
 
 .price_box:hover .price_circle {
-	border: 2px solid rgb(39, 184, 150);
+	border: 2px solid #24baa0;
 	background-color: white;
 	color: rgb(39, 184, 150);
 }
@@ -682,24 +661,24 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 
 .price_box >button {
 	position: absolute;
-	background-color: rgb(39, 184, 150);
+	background-color: #24baa0;
 	font-size: 16px;
-	padding: 10px 30px;
+	padding: 10px 50px;
 	color: white;
 	vertical-align: middle;
 	border: none;
 	text-transform: uppercase;
 	border-radius: 5%;
 	left: 80px;
-	bottom: 10px;		
+	bottom: 20px;		
 }
 
 .price_box:hover button {
 	background-color: white;
-	color: rgb(39, 184, 150);
+	color: #24baa0;
 }
 
-/*--------order box-----*/
+/*---------------------order box------------------------------------------------*/
 
 .calc {
     background-color: #f7f7f7;
@@ -780,8 +759,8 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 }
 .checkbox label::after {
     background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
-   border: 0;
-   display: none;
+    border: 0;
+    display: none;
     
 }
 
@@ -812,8 +791,8 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 
 .calc_box .green_button {
     position: relative;
-	background-color: rgb(39, 184, 150);
-	font-size: 28px;
+	background-color: #24baa0;
+	font-size: 22px;
 	font-weight: normal;
 	padding: 10px 90px;
 	vertical-align: middle;
@@ -926,7 +905,7 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
     color:white;
 }
 
-/*-------slider in calc section------*/
+/*--------------------------slider in calc section-----------------------------*/
 
 .calc_box ul{
     list-style-type: none;
@@ -940,43 +919,49 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 };
 
 
-/*----------------------*/
-.kontakt_box {
+/*-----------------------------------------------------------------------------*/
+
+
+
+/*----------contact form------------------------------------------------------*/
+
+.contact_box {
 	position: relative;
 	height: 500px;
 }
-.kontakt_box div:first-child{
+.contact_box div:first-child{
 	width: 60%;
-	height: 500px;
+	height: 350px;
 }
 form input {
 	width: 100%;
-	height: 70px;
+	height: 40px;
 	margin-bottom: 25px;
-	border: 1px solid rgba(39, 184, 150, .6);
+	border: 1px solid #24baa0;
 	padding: 10px;
 	font-weight: lighter;
-	font-size: 28px;
+	font-size: 22px;
 }
 
 textarea {
-	border: 1px solid rgba(39, 184, 150, .6);
+	border: 1px solid #24baa0;
 	padding: 10px;
 	font-weight: lighter;
-	font-size: 28px;
+	font-size: 22px;
 	resize: none;
 	width: 100%;
 }
 
-.kontakt_box div {
+.contact_box div {
 	float: left;
 }
-.kontakt_box div:last-child {
+.contact_box div:last-child {
 	position: relative;
 	width: 40%;
 }
-.kontakt_box img {
+.contact_box img {
 	position: absolute;
+    width: 50%;
 	top: -40px;
 	right: 0;
 	bottom: 0;
@@ -984,10 +969,10 @@ textarea {
 	margin: 0 auto;
 }
 
-.kontakt_box button {
+.contact_box button {
 	position: relative;
-    background-color: rgb(39, 184, 150);
-    font-size: 28px;
+    background-color: #24baa0;
+    font-size: 20px;
     font-weight: normal;
     padding: 10px 90px;
     vertical-align: middle;
@@ -995,48 +980,89 @@ textarea {
     text-transform: uppercase;
     border-radius: 10px;
     left: 85px;
-    top: 325px;
+    top: 180px;
     color: white;
 }
 
+
 #checkbox {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    left: 85px;
+    
+}
 
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 230px;
-  right: 0;
-  bottom: 0;
-  left: 85px;
-  background:url("../images/form_ok.jpg") 0 0 no-repeat;
+#checkbox input{
+
+    display: block;
+    opacity: 0;
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    cursor: pointer;
+    background-color: white;
  
 }
 
-#checkbox:after {
-	content: url("../images/form_ok.jpg") 0 0 no-repeat;
- 
+#checkbox label {
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 22px;
+    color: #999999;
+    line-height: 120%;
+    padding-top: 12px;
+    cursor: pointer;
 }
 
-.kontakt_box label{
-  width: 240px;
-  height: 40px;
-  position: absolute;
-  top: 230px;
-  right: 0;
-  bottom: 0;
-  left: 140px;
-  font-size: 17px;
-  color: #9c9c9c;
-
+#checkbox label::before, #checkbox label::after {
+    background-color: white;
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 10px;
+    height: 20px;
+    position: absolute;
+    width: 20px;
+    top: 7px;
 }
 
+#checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+    border: 0;
+    display: none;
+    
+}
+
+#checkbox input:checked + label::after {
+    display: block;
+    
+}
+
+
+.contact_box label{
+    width: 270px;
+    position: absolute;
+    top: 150px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    font-size: 15px;
+    color: #9c9c9c;
+
+}
+/*-----------------------------footer------------------------------------------*/
 footer {
 	width: 100%;
 	height: 50px;
 	background-color: white; 
-	font-size:20px;
+	font-size:15px;
 	line-height: 40px;
 	color: #9c9c9c;
+    background-color: #f7f7f7;
+    padding-top: 20px;
 }
 
 footer .container div:nth-child(2) {
@@ -1045,13 +1071,14 @@ footer .container div:nth-child(2) {
 
 footer img {
 	float: left;
+    
 
 }
 footer img:first-of-type{
-	padding-left: 210px;
+	padding-left: 410px;
 }
 
-#tekst_logo {
+.tekst_logo {
 	float: right;
 	display: inline-block;
 	color: #9c9c9c;
@@ -1059,7 +1086,7 @@ footer img:first-of-type{
 	font-weight: normal;
 	bottom: 50px;
 }
-#tekst_logo span {
+.tekst_logo span {
 	font-weight: bold;
 	color: #9c9c9c;
 }

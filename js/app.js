@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function() {
     //variables DOM
     
     var menuElements = document.querySelectorAll(".menu_list > li");
-    var sliderDiv = document.querySelector("#background_sec1");
+    
+    var sliderDiv = document.querySelector(".background_sec1");
     var listElementsSlider = sliderDiv.querySelectorAll("li");
     var arrowNext = document.querySelector(".arrow_right");
     var arrowPrev = document.querySelector(".arrow_left");
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var transportCheckBox = document.querySelector("#transport");
     
 
-    var titleSummaryPanel = document.querySelector(".panel_left .title");
+    var titleSummaryPanel = document.querySelector(".panel_left .title_sum");
     var typePanelLeft = document.querySelector(".panel_left .type");
     var colorPanelLeft = document.querySelector(".panel_left .color");
     var patternPanelLeft = document.querySelector(".panel_left .pattern");
@@ -45,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var photoIndex = 0;
    
     
-    //event - show/hdden the hidden menu in the header 
+    //event - show/hidden the hidden menu in the header 
     
     for(var i=0; i<menuElements.length; i++) {
         menuElements[i].addEventListener("mouseenter", function(){ 
@@ -53,15 +54,19 @@ document.addEventListener("DOMContentLoaded", function() {
             var triangleDivList = listHover.querySelector("div .triangle");
             listHover.style.display="block";
             triangleDivList.style.display="block";
-        });
-    
-        menuElements[i].addEventListener("mouseleave", function(){ 
+
+            });
+        
+
+      menuElements[i].addEventListener("mouseleave", function(){ 
+        
             var listHover = this.querySelector(".menu_list_hover");
-            var triangleDivList = listHover.querySelector("div .triangle");
+            var triangleDivList = this.querySelector("div .triangle");
             listHover.style.display="none";
             triangleDivList.style.display="none";
         });
-    }
+    };
+    
     //event - slider in section info 
     
     arrowNext.addEventListener("click", function(event){
@@ -85,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         listElementsSlider[photoIndex].classList.toggle("visible");
     })
     
-    //event - show/hidden div with chair's name on white_box, scetion photo
+    //event - show/hidden div with chair's name on white_box, section photo
     
     for(var i =0; i < 2; i++){
         whiteBoxInfoSection[i].addEventListener("mouseenter", function(){
@@ -130,9 +135,11 @@ document.addEventListener("DOMContentLoaded", function() {
                  
                     redChair.classList.remove("visible"); orangeChair.classList.add("visible");   
                     blackChair.classList.remove("visible");
+                    
                 } else if(this.dataset.chair == "margarita") {
                     redChair.classList.remove("visible"); orangeChair.classList.remove("visible");
                     blackChair.classList.add("visible");
+                    
                 } else {
                     redChair.classList.add("visible"); orangeChair.classList.remove("visible");
                     blackChair.classList.remove("visible");
