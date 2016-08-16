@@ -42,7 +42,7 @@
     							<li><a href="#">News</a></li>
     							<li><a href="#">Team</a></li>
     							<li><a href="#">History</a></li>
-    						</ul>
+    				f		</ul>
                     </li>    
    			 	</ul>
             </nav>
@@ -57,7 +57,15 @@
             <div class="arrow">
 
 				<div class="arrow_left">&lt</div>
-				<div class="arrow_right">&gt</div> 
+                
+                <!--Added style to html tag, becouse chrome don't read class arrow_right in style.css-->
+				<div class="arrow_right" style="display: inline-block;
+                        width: 64px;
+                        height: 64px;
+                        color: rgb(39, 184, 150);
+                        font-size: 64px;
+                        float: right;
+                        margin-top: 150px;">&gt</div> 
             </div>	
 
             <div id="background_sec1">
@@ -166,7 +174,98 @@
 		
 		</div>
 	</section>
+    
+    
+    <section class="calc">
+		<div class="container">
+			<div class="row">
+            </div>
+            <div>
+                <div class="text_section">
+                    <div>
+                        <h1>complete your order</h1>
+                    </div>
+                </div>
 
+                <div class="text_section right">
+                    <div>
+                        <h1>resume</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calc_box form">
+                <div class="drop_down_list">
+                    <span class="list_label">Select the type </span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="200" data-chair="clair">Chair Clair</li>
+                        <li data-price="300"data-chair="margarita">Chair Margarita</li>
+                        <li data-price="400"data-chair="selena">Chair Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Select the color</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="50" data-color="red">Red</li>
+                        <li data-price="100" data-color="black">Black</li>
+                        <li data-price="150" dtat-color="orange">Orange</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Select the pattern</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li data-price="100" data-pattern="fabric">Fabric</li>
+                        <li data-price="200" data -pattern="skin">Skin</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <div class="checkbox"></div>
+                
+            </div>
+    
+
+            <div class="calc_box img_box">
+                <ul>
+                    <li class="calc_box_img visible"><img src="images/red_chair.png"></li>
+                    <li class="calc_box_img"><img src="images/black.png"></li>
+                    <li class="calc_box_img"><img src="images/orange.png"></li>
+                        
+                
+                </ul>
+                
+            </div>
+
+            <div class="calc_box">
+
+            <div class="summary_panel">
+                <div class="panel_left">
+                    <h4 class="title">Your chair</h4>
+                    <span class="type"></span>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="type"></span>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUM</div>
+                <div class="sum"><strong></strong></div>
+            
+                <button class="green_button"><a href="" >Order</a></button>
+            </div>
+            </div>
+        </div>
+    </section>
 
 	<section id="kontakt">
 		<div class="container">
@@ -174,7 +273,7 @@
             </div>
 			<div class="text_section">
 				<div>
-				    <h1>kontakt</h1>
+				    <h1>contact</h1>
 				</div>
             </div>
 				

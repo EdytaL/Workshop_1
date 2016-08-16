@@ -342,6 +342,16 @@ section {
     display: inline-block;
 };
 
+
+.arrow_right div{
+	width: 64px;
+	height: 64px;
+	color: rgb(39, 184, 150);
+	font-size: 64px;
+	float: right;
+	margin-top: 150px;
+}
+
 .arrow_left {
     display: inline-block;
 	width: 64px;
@@ -349,15 +359,6 @@ section {
 	color: rgb(39, 184, 150);
 	font-size: 64px;
 	float: left;
-	margin-top: 150px;
-}
-
-.arrow_right {
-	width: 64px;
-	height: 64px;
-	color: rgb(39, 184, 150);
-	font-size: 64px;
-	float: right;
 	margin-top: 150px;
 }
 
@@ -698,6 +699,248 @@ div pierwszym; kolor biały, przezroczystość ustawiona na 50%*/
 	color: rgb(39, 184, 150);
 }
 
+/*--------order box-----*/
+
+.calc {
+    background-color: #f7f7f7;
+}
+.calc .text_section {
+    display: inline-block;
+    padding-bottom: 50px;
+    
+}
+
+.right {
+    float: right;
+    text-align: right;
+}
+
+.calc_box {
+    width: 33%;
+    display: inline-block;
+    position: relative;
+}
+
+
+.drop_down_list {
+    border:1px solid  #24baa0;
+    width: 300px;
+    height:40px;
+    background-color: white;
+    margin-top:22px;
+    padding: 8px 12px;
+    position: relative;
+    line-height: 20px;
+    
+}
+
+.list_label {
+    font-size: 22px;
+    color:  #cecece;
+    font-weight: normal;
+}
+
+.checkbox {
+    position: relative;
+    padding: 30px 30px 30px 0;
+}
+
+.checkbox input {
+    display: block;
+    opacity: 0;
+    height: 28px;
+    position: absolute;
+    width: 28px;
+    cursor: pointer;
+    background-color: white;
+    
+}
+
+.checkbox label {
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 22px;
+    color: #999999;
+    line-height: 120%;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.checkbox label::before, .checkbox label::after {
+    background-color: white;
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 10px;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+    top: 7px;
+}
+.checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+   border: 0;
+   display: none;
+    
+}
+
+.checkbox input:checked + label::after {
+    display: block;
+    
+}
+
+
+.img_box img {
+    width: 264px;
+    height: 210px;
+    
+}
+
+.img_box ul img:nth-of-type(2) {
+    width: 100%;
+    margin-left: -35px;
+}
+
+.summary_panel {
+    background-color: white;
+    width:100%;
+    height:205px;
+    padding:10px;
+  
+}
+
+.calc_box .green_button {
+    position: relative;
+	background-color: rgb(39, 184, 150);
+	font-size: 28px;
+	font-weight: normal;
+	padding: 10px 90px;
+	vertical-align: middle;
+	border: none;
+	text-transform: uppercase;
+	border-radius: 10px;
+	left: 15px;
+	bottom: -35px;
+    
+}
+
+.green_button a{
+    text-decoration: none;
+    color: white;
+    
+}
+.panel_left {
+    display: inline-block;
+    width: 185px;
+    vertical-align: top;
+    padding-bottom:10px;
+    border-bottom:1px solid #e7e7e7;
+    height: 150px;
+}
+
+.panel_right {
+    display: inline-block;
+    width: 100px;
+    border-left:1px solid #e7e7e7;
+    text-align: right;
+    vertical-align: top;
+    padding-bottom:10px;
+    border-bottom:1px solid #e7e7e7;
+    height: 150px;
+}
+
+.panel_left h4 , .panel_right h4{
+    color: #5b5a5a;
+    font-size: 23px;
+}
+
+.panel_left span{
+    margin-top:10px;
+    font-size: 22px;
+    color: #5b5a5a;
+    display: block;
+    font-weight: normal;
+}
+
+.panel_right span {
+    display: block;
+    font-size: 22px;
+    color: #24baa0;
+    margin-top:10px;
+}
+.sum_label{
+    display: inline-block;
+    width: 185px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5b5a5a;
+    
+}
+
+.sum {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-top: 10px;
+    
+    font-size: 22px;
+    color: #24baa0;
+}
+
+.list_arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #24baa0;
+    display:block;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    cursor: pointer;
+    
+}
+
+.list_panel {
+    background-color: white;
+    border: 1px solid  #24baa0;
+    width: 300px;
+    list-style: none;
+    margin: 0;
+    left: -1px;
+    z-index: 2;
+    position: absolute;
+    top: 37px;
+    display:none;
+}
+.list_panel li {
+    padding-top:10px;
+    padding-left: 15px;
+    cursor: pointer;
+    color: #585858;
+}
+
+.list_panel li:hover {
+    background-color:  #24baa0;
+    color:white;
+}
+
+/*-------slider in calc section------*/
+
+.calc_box ul{
+    list-style-type: none;
+}
+
+.calc_box_img{
+    display: none;
+}
+.visible {
+    display: inline-block;
+};
+
+
+/*----------------------*/
 .kontakt_box {
 	position: relative;
 	height: 500px;
@@ -742,19 +985,18 @@ textarea {
 }
 
 .kontakt_box button {
-	position: absolute;
-	background-color: rgb(39, 184, 150);
-	font-size: 36px;
-	font-weight: bold;
-	padding: 10px 90px;
-	color: white;
-	vertical-align: middle;
-	border: none;
-	text-transform: uppercase;
-	border-radius: 10px;
-	left: 80px;
-	bottom: 10px;
-	margin-bottom: 110px;
+	position: relative;
+    background-color: rgb(39, 184, 150);
+    font-size: 28px;
+    font-weight: normal;
+    padding: 10px 90px;
+    vertical-align: middle;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    left: 85px;
+    top: 325px;
+    color: white;
 }
 
 #checkbox {
@@ -775,7 +1017,7 @@ textarea {
  
 }
 
-label{
+.kontakt_box label{
   width: 240px;
   height: 40px;
   position: absolute;
