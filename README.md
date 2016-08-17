@@ -1,4 +1,4 @@
-.# SitOnChair
+# SitOnChair
 
 SitOnChair is the simple website I have done as one of my final project in an coding bootcamp.
 
