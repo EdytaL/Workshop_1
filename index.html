@@ -16,33 +16,33 @@
 			<div class="row">	
 			</div>
 
-            <div id="sit_on_chair">sit <span>on</span> chair
+            <div class="sit_on_chair">sit <span>on</span> chair
             </div>
             <nav> 
 				<ul class="menu_list">
     				<li><a href="#">About us</a>
-    						<ul class="menu_list_hover">
-                                <li><div class="triangle"></div></li>
-    							<li><a href="#">News</a></li>
-    							<li><a href="#">Team</a></li>
-    							<li><a href="#">History</a></li>
-    						</ul>
+    				    <ul class="menu_list_hover">
+                            <li><div class="triangle"></div></li>
+    				        <li><a href="#">News</a></li>
+    				        <li><a href="#">Team</a></li>
+    				        <li><a href="#">History</a></li>
+    				    </ul>
                     </li>    
     				<li><a href="#">gallery</a>
-    						<ul class="menu_list_hover">
-                                <li><div class="triangle"></div></li>
-    							<li><a href="#">News</a></li>
-    							<li><a href="#">Team</a></li>
-    							<li><a href="#">History</a></li>
-    						</ul>
+    				    <ul class="menu_list_hover">
+                            <li><div class="triangle"></div></li>
+    				        <li><a href="#">News</a></li>
+    				        <li><a href="#">Team</a></li>
+    				        <li><a href="#">History</a></li>
+    				    </ul>
                     </li>    
     				<li><a href="#">contact</a>
-    						<ul class="menu_list_hover">
-                                <li><div class="triangle"></div></li>
-    							<li><a href="#">News</a></li>
-    							<li><a href="#">Team</a></li>
-    							<li><a href="#">History</a></li>
-    				f		</ul>
+    				    <ul class="menu_list_hover">
+                            <li><div class="triangle"></div></li>
+    				        <li><a href="#">News</a></li>
+    				        <li><a href="#">Team</a></li>
+    				        <li><a href="#">History</a></li>
+    				    </ul>
                     </li>    
    			 	</ul>
             </nav>
@@ -50,7 +50,7 @@
 
 	</header>
 
-	<section id="info">
+	<section class="info">
 		<div class="container banner">
 			<div class="row">
             </div>
@@ -59,16 +59,10 @@
 				<div class="arrow_left">&lt</div>
                 
                 <!--Added style to html tag, becouse chrome don't read class arrow_right in style.css-->
-				<div class="arrow_right" style="display: inline-block;
-                        width: 64px;
-                        height: 64px;
-                        color: rgb(39, 184, 150);
-                        font-size: 64px;
-                        float: right;
-                        margin-top: 150px;">&gt</div> 
+				<div class="arrow_right" style="display: inline-block; width: 64px; height: 64px; color: rgb(39, 184, 150); font-size: 64px; float: right; margin-top: 150px;">&gt</div> 
             </div>	
 
-            <div id="background_sec1">
+            <div class="background_sec1" style="position: relative; width: 40%; height: 300px; padding: 15px; padding-top: 40px; float: left; margin-top: 10px; margin-bottom: 10px;">
                 <ul>
                     <li class="visible"><img src="images/black_chair.png" alt="chair"></li>
                     <li ><img src="images/orange.png" alt="chair"></li>
@@ -77,10 +71,10 @@
 						
             </div>
 
-            <div id="title">
+            <div class="title">
 				<h1>sit <span>on</span> our <span>chair</span></h1>
                 <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. </p>
-				<button type="button">Zobacz więcej</button>
+				<button type="button">Learn more</button>
 						
             </div>
 				
@@ -88,7 +82,7 @@
 		</div>
 	</section>
 
-	<section id="photo">
+	<section class="photo">
 		<div class="container">
 			<div class="row">
             </div>
@@ -107,7 +101,7 @@
 
 
             <div class="white_box" id="white_box3">
-				<div id="white_box_text">Finds all inputs</div>
+				<div class="white_box_text">Finds all inputs</div>
 				<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis.</p>
 				<p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper.</p>
             </div>
@@ -115,60 +109,60 @@
 		</div>
 	</section>
 
-	<section id="cennik">
+	<section class="price_list">
 		<div class="container">
             <div class="row">
             </div>
 
             <div class="text_section">
 				<div>
-				    <h1>cennik</h1>
+				    <h1>Price list</h1>
 				</div>
             </div>
 
             <div class="price_box">
                 <h1>basic plan</h1>
                 <div class="price_circle">85<sup>99</sup> 
-    				<p>pln/msc</p>
+    				<p>€/mt</p>
                 </div>
 
-                <div class="plan_options">Zakup towaru + dowóz</div>
-                <div class="plan_options">Serwis</div>
+                <div class="plan_options">Purchase + delivery</div>
+                <div class="plan_options">Service</div>
 
-                <button type="button">dołącz</button>
-                <div class="kolo_big"></div>
-                <div class="kolo_small"></div>
+                <button type="button">Add</button>
+                <div class="round_big"></div>
+                <div class="round_small"></div>
             </div>
 			
             <div class="price_box" id="standard_plan">
 				<h1>standard plan</h1>
                 <div class="price_circle">95<sup>99</sup> 
-    				<p>pln/msc</p>
+    				<p>€/mt</p>
                 </div>
 
-                <div class="plan_options">Zakup towaru + dowóz</div>
-                <div class="plan_options">Serwis</div>
-                <div class="plan_options">Gwarancja 5 lat</div>
+                <div class="plan_options">Purchase + delivery</div>
+                <div class="plan_options">Service</div>
+                <div class="plan_options">5 Year Guarantee</div>
 
-                <button type="button">dołącz</button>
-                <div class="kolo_big"></div>
-                <div class="kolo_small"></div>
+                <button type="button">Add</button>
+                <div class="round_big"></div>
+                <div class="round_small"></div>
             </div>
 
             <div class="price_box">
 				<h1>advance plan</h1>
                 <div class="price_circle">211<sup>00</sup> 
-    				<p>pln/msc</p>
+    				<p>€/mt</p>
                 </div>
 
-                <div class="plan_options">Zakup towaru + dowóz</div>
-                <div class="plan_options">Serwis</div>
-                <div class="plan_options">Gwarancja 5 lat</div>
-                <div class="plan_options">Porady projektanta</div>
+                <div class="plan_options">Purchase + delivery</div>
+                <div class="plan_options">Service</div>
+                <div class="plan_options">5 Year Guarantee</div>
+                <div class="plan_options">Interior Design Tips </div>
 
-                <button type="button">dołącz</button>
-                <div class="kolo_big"></div>
-                <div class="kolo_small"></div>
+                <button type="button">Add</button>
+                <div class="round_big"></div>
+                <div class="round_small"></div>
             </div>
 			
 		
@@ -200,8 +194,8 @@
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
                         <li data-price="200" data-chair="clair">Chair Clair</li>
-                        <li data-price="300"data-chair="margarita">Chair Margarita</li>
-                        <li data-price="400"data-chair="selena">Chair Selena</li>
+                        <li data-price="300" data-chair="margarita">Chair Margarita</li>
+                        <li data-price="400" data-chair="selena">Chair Selena</li>
                     </ul>
                 </div>
                 <div class="drop_down_list">
@@ -218,7 +212,7 @@
                     <span class="list_arrow"></span>
                     <ul class="list_panel">
                         <li data-price="100" data-pattern="fabric">Fabric</li>
-                        <li data-price="200" data -pattern="skin">Skin</li>
+                        <li data-price="200" data-pattern="skin">Skin</li>
                     </ul>
                 </div>
                 <div class="checkbox check-box">
@@ -245,14 +239,14 @@
 
             <div class="summary_panel">
                 <div class="panel_left">
-                    <h4 class="title">Your chair</h4>
+                    <h4 class="title_sum">Your chair</h4>
                     <span class="type"></span>
                     <span class="color"></span>
                     <span class="pattern"></span>
                     <span class="transport"></span>
                 </div>
                 <div class="panel_right">
-                    <h4 class="title value"></h4>
+                    <h4 class="title_sum value"></h4>
                     <span class="type"></span>
                     <span class="color value"></span>
                     <span class="pattern value"></span>
@@ -261,13 +255,13 @@
                 <div class="sum_label">SUM</div>
                 <div class="sum"><strong></strong></div>
             
-                <button class="green_button"><a href="" >Order</a></button>
+                <button class="green_button"><a href="#" >Order</a></button>
             </div>
             </div>
         </div>
     </section>
 
-	<section id="kontakt">
+	<section class="contact">
 		<div class="container">
 			<div class="row">
             </div>
@@ -277,20 +271,20 @@
 				</div>
             </div>
 				
-            <div class="kontakt_box">
+            <div class="contact_box">
 				<div>
 				    <form>
-				        <input type="text" name="name" placeholder="Imię"><br>
+				        <input type="text" name="name" placeholder="Name"><br>
 				        <input type="text" name="email" placeholder="email"><br>
-				        <textarea rows="5" cols="42" placeholder="Wiadomość"></textarea>
+				        <textarea rows="4" cols="42" placeholder="Message"></textarea>
 				    </form>
 				</div>
 					
-                <div class="kontakt_box">
+                <div class="contact_box checkbox">
                     <img src="images/red_chair.png" alt="red_chair">
                     <input type="checkbox" name = "checkbox" id="checkbox">
-                    <label for="checkbox">Zgadzam się na przetwarzanie danych osobowych</label>
-                    <button type="submit">wyślij</button>
+                    <label for="checkbox">I agree to the processing of personal data</label>
+                    <button type="submit">submit</button>
                 </div>
             </div>
 				
@@ -314,7 +308,7 @@
 
             </div>
 
-<div id="tekst_logo">sit <span>on </span>chair</div>
+<div class="tekst_logo">sit <span>on </span>chair</div>
 				
 
 		</div>
