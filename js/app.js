@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     //variables DOM
     
     var menuElements = document.querySelectorAll(".menu_list > li");
-    var sliderDiv = document.querySelector(".background_sec1");
+    var sliderDiv = document.getElementById("slider_div");
     var listElementsSlider = sliderDiv.querySelectorAll("li");
     var arrowNext = document.querySelector(".arrow_right");
     var arrowPrev = document.querySelector(".arrow_left");
