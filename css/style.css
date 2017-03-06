@@ -309,15 +309,13 @@ section {
 	color-stop(0.06, #DCDBE1),
 	color-stop(1, #F9F9F9),
 	color-stop(1, #F8F8F8)
-    )
+    );
     background-image: -o-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -moz-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -webkit-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: -ms-linear-gradient(top, #DCDBE1 6%, #F9F9F9 100%, #F8F8F8 100%);
     background-image: linear-gradient(to top, #DCDBE1 6%, #F9F9\    F9 100%, #F8F8F8 100%);;
 }
-
-
 .background_sec1 {
 	position: relative;
 	width: 40%;
@@ -336,12 +334,9 @@ section {
 .background_sec1 li {
     display: none;
 }
-
 .background_sec1 .visible {
     display: inline-block;
 }
-
-
 .arrow_right div{
 	width: 64px;
 	height: 64px;
@@ -350,7 +345,6 @@ section {
 	float: right;
 	margin-top: 150px;
 }
-
 .arrow_left {
     display: inline-block;
 	width: 64px;
@@ -372,7 +366,6 @@ section {
 	height: 300px;
 	margin-top: 70px;
 }
-
 .title > h1 {
 	text-transform: uppercase;
 	padding: 10px;
@@ -380,7 +373,6 @@ section {
 	font-size: 32px;
 	font-weight: normal;
 }
-
 .title p {
 	padding: 10px;
 	text-align: center;
@@ -388,7 +380,6 @@ section {
 	color: #2e2e2e;	
 	line-height: 20px;
 }
-
 .title >button {
 	background-color: #24baa0;
 	border-radius: 10px;
@@ -400,17 +391,11 @@ section {
 	margin-top: 20px;
 	margin-left: 100px;
 	vertical-align: middle;
-
-
 }
-
 .photo {
 	background-color: white;
 	display: inline-block;
 }
-
-
-
 /*----------------white_box - section photo----------------------------------*/
 .white_box {
 	width: 300px;
@@ -420,12 +405,10 @@ section {
 	background-color: white;
 	margin: 20px auto;
 }
-
 .white_box span{
 	color: black;
 	text-transform: uppercase;
 }
-
 .white_box h1 {
 	font-size: 15px;
 	font-weight: 600;
@@ -433,14 +416,11 @@ section {
 	height: 30px;
 	border-bottom: 8px solid #24baa0;
 }
-
 #white_box1 {
-
 	background-image: url("../images/box1_img.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
 #white_box1 div{
 	background-color: rgba(255, 255, 255, .5);
 	width: 300px;
@@ -449,8 +429,6 @@ section {
 	padding-top: 10px;
 	padding-left: 10px;
 }
-
-
 #white_box2 {
 	background-image: url("../images/box2_img.jpg");
 	background-size: cover;
@@ -459,8 +437,6 @@ section {
 	margin-right: 50px;
 	font-weight: bold;
 }
-
-
 #white_box2 div{
 	background-color: rgba(255, 255, 255, .5);
 	width: 300px;
@@ -469,53 +445,43 @@ section {
 	padding-top: 10px;
 	padding-left: 10px;
 }
-
 #white_box3 {
-
 	float: right;
 	border: 1px solid rgb(217, 217, 217);
 	width: 300px;
 	height: 230px;
 	padding: 10px;
 }
-
 .white_box_text  {
 	width: 180px;
 	font-weight: bold;
 	font-size: 18px;
 	margin-top: 20px;
 	margin-bottom: 10px;
-	border-bottom: 10px solid #24baa0;
-	
+	border-bottom: 10px solid #24baa0;	
 }
-
 #white_box3 p:first-of-type {
 	font-weight: 300;
 	margin-bottom: 10px;
 	color: #5c5c5c;
 }
-
 #white_box3 p:last-of-type {
 	font-weight: 300;
 	margin-bottom: 10px;
 	color: #5c5c5c;
-
 }
 
 /*----------------------section price_list--------------------------------------*/
-
 .price_list {
 	color: #24baa0;
 	background-color: #f0f0f0;
 }
-
 .text_section {
 	text-transform: uppercase;
 	padding-bottom: 100px;
 	padding-top: 30px;
 	color: #686868;
 }
-
 .text_section h1 {
 	font-weight: normal;
 	font-size: 24px;
@@ -524,10 +490,8 @@ section {
 	border-bottom: 8px solid #24baa0;
 }
 
-
 /*---------------------price_box-----------------------------------------------*/
 .price_box {
-
 	position: relative;
 	float: left;
 	display: inline-block;
@@ -541,21 +505,17 @@ section {
 	margin-bottom: 50px;
 	background-color: #f7f7f7;
 }
-
 .price_box:hover{
 	border: 2px solid #24baa0;
 	background-color: #24baa0;
 }
-
 .price_box:last-child {
 	float: right;
 }
- 
 #standard_plan {
 	margin-left: 50px;
 	margin-right: 50px;
 }
-
 .round_big {
 	position: absolute;
 	top: -35px;
@@ -569,13 +529,10 @@ section {
 	background-color: white;
 	z-index: 10;
 }
-
 .price_box:hover .round_big {
 	border:2px solid #24baa0;
 	background-color: #24baa0;
 } 
-
-
 .round_small {
 	position: absolute;
 	top: -19px;
@@ -589,13 +546,10 @@ section {
 	background-color: #c2c2c2;
 	z-index: 10;
 }
-
 .price_box:hover .round_small {
 	border:2px solid white;
 	background-color: white;
 }
-
-
 .price_box h1{
 	text-transform: uppercase;
 	padding: 30px 25px 0 25px;
@@ -603,11 +557,9 @@ section {
 	font-weight: normal;
 	font-size: 24px;
 }
-
 .price_box:hover h1 {
 	color: white;
 }
-
 .price_circle {
 	padding: 25px;
 	width: 130px;
@@ -620,13 +572,11 @@ section {
 	margin: 20px auto;
 	background-color: white;
 }
-
 .price_box:hover .price_circle {
 	border: 2px solid #24baa0;
 	background-color: white;
 	color: rgb(39, 184, 150);
 }
-
 .price_circle sup{
 	font-size: 16px;
 }
@@ -634,7 +584,6 @@ section {
 	font-size: 16px;
 	text-transform: uppercase;
 }
-
 .plan_options {
 	width: 100%;
 	height: 50px;
@@ -643,22 +592,18 @@ section {
 	font-size: 24px;
 	padding: 10px;
 }
-
 .price_box:hover .plan_options {
 	background-color: white;
 	color: #999999;
 }
-
 .plan_options:nth-child(even) {
 	background-color: #f0f0f0;
 	color: #808080;
 }
-
 .price_box:hover .plan_options:nth-child(even) {
 	background-color: #f0f0f0;
 	color: #999999;
 }
-
 .price_box >button {
 	position: absolute;
 	background-color: #24baa0;
@@ -672,37 +617,29 @@ section {
 	left: 80px;
 	bottom: 20px;		
 }
-
 .price_box:hover button {
 	background-color: white;
 	color: #24baa0;
 }
 
 /*---------------------order box------------------------------------------------*/
-
 .calc {
     background-color: #f7f7f7;
 }
 .calc .text_section {
     display: inline-block;
     padding-bottom: 50px;
-    
 }
-
 .right {
     position: absolute;
     right: 0;
     text-align: right;
 }
-
-
 .calc_box {
     width: 33%;
     display: inline-block;
     position: relative;
 }
-
-
 .drop_down_list {
     border:1px solid  #24baa0;
     width: 300px;
@@ -711,21 +648,17 @@ section {
     margin-top:22px;
     padding: 8px 12px;
     position: relative;
-    line-height: 20px;
-    
+    line-height: 20px;    
 }
-
 .list_label {
     font-size: 22px;
     color:  #cecece;
     font-weight: normal;
 }
-
 .checkbox {
     position: relative;
     padding: 30px 30px 30px 0;
 }
-
 .checkbox input {
     display: block;
     opacity: 0;
@@ -733,10 +666,8 @@ section {
     position: absolute;
     width: 28px;
     cursor: pointer;
-    background-color: white;
-    
+    background-color: white;    
 }
-
 .checkbox label {
     display: block;
     padding-left: 65px;
@@ -747,7 +678,6 @@ section {
     padding-top: 12px;
     cursor: pointer;
 }
-
 .checkbox label::before, .checkbox label::after {
     background-color: white;
     border: 1px solid #27c7ab;
@@ -762,35 +692,26 @@ section {
 .checkbox label::after {
     background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
     border: 0;
-    display: none;
-    
+    display: none;   
 }
-
 .checkbox input:checked + label::after {
     display: block;
     
 }
-
-
 .img_box img {
     width: 264px;
-    height: 210px;
-    
+    height: 210px;    
 }
-
 .img_box ul img:nth-of-type(2) {
     width: 100%;
     margin-left: -35px;
 }
-
 .summary_panel {
     background-color: white;
     width:100%;
     height:205px;
-    padding:10px;
-  
+    padding:10px;  
 }
-
 .calc_box .green_button {
     position: relative;
 	background-color: #24baa0;
@@ -802,14 +723,11 @@ section {
 	text-transform: uppercase;
 	border-radius: 10px;
 	left: 15px;
-	bottom: -35px;
-    
+	bottom: -35px;   
 }
-
 .green_button a{
     text-decoration: none;
-    color: white;
-    
+    color: white;    
 }
 .panel_left {
     display: inline-block;
@@ -819,7 +737,6 @@ section {
     border-bottom:1px solid #e7e7e7;
     height: 150px;
 }
-
 .panel_right {
     display: inline-block;
     width: 100px;
@@ -830,12 +747,10 @@ section {
     border-bottom:1px solid #e7e7e7;
     height: 150px;
 }
-
 .panel_left h4 , .panel_right h4{
     color: #5b5a5a;
     font-size: 23px;
 }
-
 .panel_left span{
     margin-top:10px;
     font-size: 22px;
@@ -843,7 +758,6 @@ section {
     display: block;
     font-weight: normal;
 }
-
 .panel_right span {
     display: block;
     font-size: 22px;
@@ -855,20 +769,16 @@ section {
     width: 185px;
     margin-top: 10px;
     font-size: 22px;
-    color: #5b5a5a;
-    
+    color: #5b5a5a;    
 }
-
 .sum {
     display: inline-block;
     width: 100px;
     text-align: right;
-    margin-top: 10px;
-    
+    margin-top: 10px;    
     font-size: 22px;
     color: #24baa0;
 }
-
 .list_arrow {
     width: 0;
     height: 0;
@@ -879,10 +789,8 @@ section {
     position: absolute;
     right: 14px;
     top: 10px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
-
 .list_panel {
     background-color: white;
     border: 1px solid  #24baa0;
@@ -901,7 +809,6 @@ section {
     cursor: pointer;
     color: #585858;
 }
-
 .list_panel li:hover {
     background-color:  #24baa0;
     color:white;
@@ -912,7 +819,6 @@ section {
 .calc_box ul{
     list-style-type: none;
 }
-
 .calc_box_img{
     display: none;
 }
@@ -920,10 +826,7 @@ section {
     display: inline-block;
 }
 
-
 /*-----------------------------------------------------------------------------*/
-
-
 
 /*----------contact form------------------------------------------------------*/
 
@@ -944,7 +847,6 @@ form input {
 	font-weight: lighter;
 	font-size: 22px;
 }
-
 textarea {
 	border: 1px solid #24baa0;
 	padding: 10px;
@@ -953,7 +855,6 @@ textarea {
 	resize: none;
 	width: 100%;
 }
-
 .contact_box div {
 	float: left;
 }
@@ -970,7 +871,6 @@ textarea {
 	left: 0;
 	margin: 0 auto;
 }
-
 .contact_box button {
 	position: relative;
     background-color: #24baa0;
@@ -985,19 +885,14 @@ textarea {
     top: 180px;
     color: white;
 }
-
-
 #checkbox {
     position: absolute;
     top: 150px;
     right: 0;
     bottom: 0;
     left: 85px;
-    
 }
-
 #checkbox input{
-
     display: block;
     opacity: 0;
     height: 28px;
@@ -1005,7 +900,6 @@ textarea {
     width: 28px;
     cursor: pointer;
     background-color: white;
- 
 }
 
 #checkbox label {
@@ -1018,7 +912,6 @@ textarea {
     padding-top: 12px;
     cursor: pointer;
 }
-
 #checkbox label::before, #checkbox label::after {
     background-color: white;
     border: 1px solid #27c7ab;
@@ -1030,7 +923,6 @@ textarea {
     width: 20px;
     top: 7px;
 }
-
 #checkbox label::after {
     background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
     border: 0;
@@ -1058,7 +950,8 @@ textarea {
 /*-----------------------------footer------------------------------------------*/
 footer {
 	width: 100%;
-	height: 50px;
+	height: auto;
+    min-height: 80px;
 	background-color: white; 
 	font-size:15px;
 	line-height: 40px;
@@ -1066,22 +959,21 @@ footer {
     background-color: #f7f7f7;
     padding-top: 20px;
 }
-
-footer .container div:nth-child(2) {
-	float: left;
+.footer_text {
+    width: 49.5%;
+    display: inline-block;
 }
-
+.footer_icons_wrapper {
+    display: inline-block;
+    width: 17%;
+    height: 100%;
+    vertical-align: middle;
+}
 footer img {
-	float: left;
-    
-
-}
-footer img:first-of-type{
-	padding-left: 410px;
+	display: inline-block
 }
 
 .tekst_logo {
-	float: right;
 	display: inline-block;
 	color: #9c9c9c;
 	text-transform: uppercase;
